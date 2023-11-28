@@ -2,7 +2,7 @@ package Banco;
 
 
 
-public class Conta {
+public class Conta implements comparable<Cliente> {
     private Integer agencia;
     private Integer conta;
     protected double saldo;
