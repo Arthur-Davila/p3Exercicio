@@ -3,7 +3,7 @@ package Banco;
 public class Conta {
     private int agencia;
     private int conta;
-    protected double saldo;
+    private double saldo;
     private Cliente cliente;
     
     public Conta(int agencia, int conta, Cliente cliente) {
