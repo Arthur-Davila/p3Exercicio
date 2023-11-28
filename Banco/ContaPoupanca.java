@@ -14,10 +14,15 @@ public class ContaPoupanca extends Conta {
 
     public double simularOperacao(int meses){
        //error message
-        for (int i = 1; i != meses; i++) {
-            this.saldo += this.saldo+(taxaRendimento*this.saldo);
+        if(meses >= 0){
+        for (int i = 0; i < meses; i++) {
+            this.saldo += this.saldo+(this.taxaRendimento*this.saldo);
         }
 
+        return this.saldo;
+    }
+    }else{
+        System.out.println("Meses não positivos");
         return this.saldo;
     }
 }
